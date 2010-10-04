@@ -56,21 +56,6 @@
   </properties>
 
   <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-jar-plugin</artifactId>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-javadoc-plugin</artifactId>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-source-plugin</artifactId>
-      </plugin>
-    </plugins>
-
     <pluginManagement>
       <plugins>
         <plugin>
@@ -267,12 +252,11 @@
         </reportSets>
       </plugin>
      
-      <plugin>
+      <!-- <plugin> API version compatibility checks
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>clirr-maven-plugin</artifactId>
         <version>${version.plugin.clirr}</version>
-      </plugin>
-      
+      </plugin> -->
       
       <plugin> <!-- Cobertura test coverage report -->
         <groupId>org.codehaus.mojo</groupId>
